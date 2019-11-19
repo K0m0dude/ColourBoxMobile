@@ -112,6 +112,8 @@ function draw() {
 
 function touchMoved() {
   // Did I click on the rectangle?
+  x=mouseX
+  y=MouseY
   if (mouseX > x && mouseX < x + w && mouseY > y && mouseY < y + h) {
     dragging = true;
     // If so, keep track of relative location of click to corner of rectangle
